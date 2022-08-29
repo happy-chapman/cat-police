@@ -1,0 +1,510 @@
+.main-header {
+    position: sticky;
+    top: 0;
+}
+
+.main-header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.main-header ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: rgb(15, 3, 46);
+    box-shadow: 0 2px 4px 0 black;
+}
+/* navigation */
+.main-header .menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    padding: 17px 20px;
+    font-size: 17px;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color ease 0.4s;
+}
+
+.menu li a:hover {
+    background-color: rgb(252, 252, 120);
+    color: black;
+}
+
+.menu {
+    float: left;
+    width: 70%;
+}
+/* logo header */
+.main-header .logo {
+    width: 30%;
+    float: left;
+}
+
+.main-header .logo img {
+    margin: 4px 10px 4px 10px;
+    float: left;
+}
+
+.main-header .logo p {
+    font-size: 16px;
+    float: left;
+    font-family: "Graduate", monospace;
+}
+
+.col-25 {
+    width: 20%;
+    overflow-y: auto;
+    position: fixed;
+    border-right: 1px solid rgb(252, 252, 120);
+    padding: 8px;
+    height: 100%;
+    background-color: rgb(16, 2, 27);
+}
+
+.col-75 {
+    display: inline-block;
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 0;
+    padding: 45px 35px;
+}
+/* Cat Gallery */
+.cat-gallery {
+    width: 90%;
+    padding: 15px;
+    background-color: rgb(250, 250, 183);
+    border: 1px solid black;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 28px;
+    margin-bottom: 65px;
+    box-shadow: 0 2px 3px 0 rgb(252, 252, 120);
+}
+
+.cat-gallery:hover {
+    box-shadow: none;
+}
+
+.cat-gallery img {
+    display: block;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.cat-gallery .text {
+    margin: auto;
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+.cat-gallery h2 {
+    text-align: center;
+    color: black;
+    padding: 0;
+    margin: 5px;
+    font-family: "Berkshire Swash", serif;
+}
+
+.cat-gallery p {
+    text-align: justify;
+}
+
+.cat-gallery abbr {
+    text-decoration: underline;
+}
+/* main-content */
+.content {
+    margin: 0 0 130px 0;
+}
+/* Home */
+#home {
+    clear: both;
+}
+
+.home-header h1 {
+    font-size: 48px;
+    color: rgb(255, 225, 52);
+    font-family: "Graduate", serif;
+}
+
+#home .home-content img {
+    float: left;
+    border: 2px solid rgb(252, 252, 120);
+    border-radius: 4px;
+    margin-right: 25px;
+    width: 275px;
+}
+
+#home .text-home {
+    line-height: 25px;
+    font-size: 20px;
+    text-align: justify;
+}
+/* About Us! */
+#about {
+    overflow: hidden;
+}
+
+#about .rank-police::after {
+    content: " ";
+    clear: left;
+    display: table;
+}
+
+#about .mission, .vision {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#about .mission h1, .vision h1 {
+    font-size: 40px;
+    color: rgb(252, 252, 120);
+}
+
+#about .mission p, .vision p {
+    font-size: 25px;
+}
+
+#about .rank .rank-header h1 {
+    font-size: 40px;
+    color: rgb(252, 252, 120);
+    text-align: center;
+}
+
+#about .rank .rank-police {
+    width: 32.33%;
+    border: 1px solid green;
+    float: left;
+    text-align: center;
+    padding: 15px;
+    margin: 5px;
+    background-color:rgb(250, 250, 183);
+    box-shadow: 0 2px 3px 0 rgb(252, 252, 120);
+}
+
+#about .rank .rank-police:hover {
+    box-shadow: none;
+}
+
+#about .rank .rank-police img {
+    border: 1px solid black;
+}
+
+#about .rank .rank-police .police-info {
+    color: black;
+    text-align: left;
+    margin: 15px 8px;
+    font-size: 18px;
+}
+
+#about .rank .rank-police .police-info address {
+    font-style: normal;
+}
+/* achievements */
+#achieve .achieve-text {
+    font-size: 20px;
+    line-height: 25px;
+}
+
+#achieve .awards-list .award {
+    float: left;
+    width: 33.33%;
+}
+
+#achieve::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#achieve .awards-list .award {
+    float: left;
+    width: 33.33%;
+}
+
+#achieve .awards-list .award ul li {
+    padding: 7px;
+}
+
+::marker {
+    color: rgb(255, 225, 52);
+}
+/* Contact US */
+form {
+    border: 1px solid rgb(250, 250, 183);
+    border-radius: 4px;
+    padding: 25px;
+    font-family: 'Courier New', Courier, monospace
+}
+
+form .forms {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+form input, select {
+    width: 100%;
+    padding: 12px 15px 10px 15px;
+    border: 2px solid black;
+    border-radius: 4px;           
+}
+
+form input:focus {
+    border: 2px solid gold;
+    border-radius: 4px;
+    outline: none; 
+}
+
+form select:focus {
+    border: 2px solid gold;
+    border-radius: 4px;
+    outline: none; 
+}
+
+form textarea {
+    resize: none;
+    width: 75%;
+    height: 250px;
+}
+
+form textarea:focus {
+    border: 2px solid gold;
+    border-radius: 4px;
+    outline: none; 
+}
+
+.forms input[type="submit"] {
+    width: 100px;
+    padding: 10px;
+    float: right;
+}
+
+.forms input[type="submit"]:hover {
+    background-color: gold;
+}
+/* footer */
+.main-footer {
+    width: 100%;
+    text-align: center;
+}
+
+.main-footer p {
+    display: inline-block;
+    margin: auto ;
+}
+
+.main-footer p:hover{
+    color: rgb(255, 225, 52);
+}
+
+@media only screen and (max-width: 1350px) {
+    .col-25:hover {
+        width: 30%;
+    }
+
+    #about .rank .rank-police {
+        width: 48.33%;
+        border: 1px solid green;
+        float: left;
+        text-align: center;
+        padding: 15px;
+        margin: 5px;
+        background-color:rgb(250, 250, 183);
+        box-shadow: 0 2px 3px 0 rgb(252, 252, 120);
+    }
+    
+    #about .rank .rank-police:hover {
+        box-shadow: none;
+    }
+    
+    #about .rank .rank-police img {
+        border: 1px solid black;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .main-header .menu {
+        width: 100%;
+        display: none;
+    }
+
+    .main-header .logo {
+        width: 100%;
+    }
+
+    .main-header .logo img {
+        float: left;
+    }
+
+    .main-header .logo p {
+        float: left;
+    }
+
+    .main-header .logo::after {
+        content: " ";
+        clear: left;
+        display: table;
+    }
+
+    .main-header .menu li {
+        float: none;
+        width: 100%;
+    }
+
+    .main-header:hover .menu {
+        display: block;
+    }
+
+    .home-header h1 {
+        font-size: 35px;
+        color: rgb(255, 225, 52);
+    }
+    /* Wanted Cats */
+    .col-25:hover {
+        width: 50%;
+    }
+
+    #about .rank .rank-police {
+        width: 100%;
+        border: 1px solid green;
+        float: left;
+        text-align: center;
+        padding: 35px;
+        margin: 5px;
+        background-color:rgb(250, 250, 183);
+        box-shadow: 0 2px 3px 0 rgb(252, 252, 120);
+    }
+    
+    #about .rank .rank-police:hover {
+        box-shadow: none;
+    }
+    
+    #about .rank .rank-police img {
+        border: 1px solid black;
+        width: 100%;
+    }
+
+    #achieve .awards-list .award ul li {
+        padding: 15px;
+    }
+}
+
+
+@media only screen and (max-width: 580px) {
+    .col-25:hover {
+        width: 90%;
+    }
+
+    .col-75 {
+        padding: 45px 25px;
+    }
+
+    .home-header h1 {
+        font-size: 30px;
+        color: rgb(255, 225, 52);
+    }
+
+    #home .home-content img {
+        float: none;
+        border: 2px solid rgb(252, 252, 120);
+        border-radius: 4px;
+        margin-right: 0;
+        width: 100%
+    }
+
+    #home .home-content .home-img {
+        width: 100%;
+    }
+    
+    #home .text-home {
+        line-height: 25px;
+        font-size: 16px;
+        text-align: left;
+        width: 100%;
+    }
+    /* About Us! */
+    #about .mission h1, .vision h1 {
+        font-size: 23px;
+        color: rgb(252, 252, 120);
+    }
+
+    #about .mission p, .vision p {
+        font-size: 17px;
+    }
+
+    #about .rank .rank-header h1 {
+        font-size: 23px;
+        color: rgb(252, 252, 120);
+        text-align: center;
+    }
+
+    #about .rank .rank-police {
+        width: 100%;
+        border: 1px solid green;
+        float: none;
+        text-align: center;
+        padding: 15px;
+        margin: 0 0 15px 0;
+        background-color:rgb(250, 250, 183);
+        box-shadow: 0 2px 3px 0 rgb(252, 252, 120);
+    }
+
+    #about .rank .rank-police img {
+        width: 100%;
+    }
+
+    #about .rank .rank-police .police-info {
+        color: black;
+        text-align: left;
+        margin: 10px 5px;
+        font-size: 16px;
+    }
+
+    /* achievements */
+    #achieve .achieve-text {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    #achieve .awards-list .award {
+        float: none;
+        width: 100%;
+    }
+
+    #achieve .awards-list .award ul {
+        margin: 0;
+        padding: 0 0 0 15px;
+    }
+
+    #achieve .awards-list .award ul li {
+        padding: 10px;
+    }
+    /* Contact US */
+    form textarea {
+        width: 100%;
+        height: 150px;
+    }
+
+    .forms input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        float: right;
+    }
+}
